@@ -10,7 +10,7 @@ public class CreateSubscriptionCommandHandler : IRequestHandler<CreateSubscripti
     private readonly ISubscriptionsRepository _subscriptionsRepository;
     //private readonly IUnitOfWork _unitOfWork;
 
-    public CreateSubscriptionCommandHandler(ISubscriptionsRepository subscriptionsRepository, IUnitOfWork unitOfWork)
+    public CreateSubscriptionCommandHandler(ISubscriptionsRepository subscriptionsRepository)
     {
         _subscriptionsRepository = subscriptionsRepository;
         //_unitOfWork = unitOfWork;
