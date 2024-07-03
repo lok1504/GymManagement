@@ -3,24 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Api", "GymManagement.Api\GymManagement.Api.csproj", "{CA1ED8D4-E9EB-4E95-8DB3-202DC573BE5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Api", "src\GymManagement.Api\GymManagement.Api.csproj", "{CA1ED8D4-E9EB-4E95-8DB3-202DC573BE5D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Application", "GymManagement.Application\GymManagement.Application.csproj", "{DCA4B57D-A5E0-4FE8-9E74-48A28153E26B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Application", "src\GymManagement.Application\GymManagement.Application.csproj", "{DCA4B57D-A5E0-4FE8-9E74-48A28153E26B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Domain", "GymManagement.Domain\GymManagement.Domain.csproj", "{736C5C1D-90C9-418C-B69C-A22122A30936}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Domain", "src\GymManagement.Domain\GymManagement.Domain.csproj", "{736C5C1D-90C9-418C-B69C-A22122A30936}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Infrastructure", "GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{3CD88170-6A00-48BD-9D07-B462895B8B68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Infrastructure", "src\GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{3CD88170-6A00-48BD-9D07-B462895B8B68}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Contracts", "GymManagement.Contracts\GymManagement.Contracts.csproj", "{87C03B62-F152-4143-98E7-ABBBD59CCFEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymManagement.Contracts", "src\GymManagement.Contracts\GymManagement.Contracts.csproj", "{87C03B62-F152-4143-98E7-ABBBD59CCFEA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{009016EF-B795-48B5-8824-1049C061423F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "requests", "requests", "{C567CCB2-071A-4E33-94A8-147512287197}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscriptions", "Subscriptions", "{4EE58C17-C073-489F-9C78-FD53AB7587F3}"
-	ProjectSection(SolutionItems) = preProject
-		GymManagement.Contracts\Subscriptions\CreateSubscription.http = GymManagement.Contracts\Subscriptions\CreateSubscription.http
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +51,5 @@ Global
 		{736C5C1D-90C9-418C-B69C-A22122A30936} = {009016EF-B795-48B5-8824-1049C061423F}
 		{3CD88170-6A00-48BD-9D07-B462895B8B68} = {009016EF-B795-48B5-8824-1049C061423F}
 		{87C03B62-F152-4143-98E7-ABBBD59CCFEA} = {009016EF-B795-48B5-8824-1049C061423F}
-		{4EE58C17-C073-489F-9C78-FD53AB7587F3} = {C567CCB2-071A-4E33-94A8-147512287197}
 	EndGlobalSection
 EndGlobal
