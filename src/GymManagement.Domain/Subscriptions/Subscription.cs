@@ -1,6 +1,5 @@
 ﻿using ErrorOr;
 using GymManagement.Domain.Gyms;
-using OneOf.Types;
 using Throw;
 
 namespace GymManagement.Domain.Subscriptions;
@@ -28,9 +27,9 @@ public class Subscription
     }
 
 
-    public ErrorOr<ErrorOr.Success> AddGym(Gym gym)
+    public ErrorOr<Success> AddGym(Gym gym)
     {
-        _gymIds.Throw().IfContains(gym.Id);
+        _gymIds.Throw().IfContains(gym.Id); 
 
         if (_gymIds.Count >= _maxGyms)
         {
