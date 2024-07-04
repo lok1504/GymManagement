@@ -25,4 +25,14 @@ public class AdminsRepository : IAdminsRepository
 
         return Task.CompletedTask;
     }
+
+    public async Task AddAsync(Admin admin)
+    {
+        await _dbContext.Admins.AddAsync(admin);
+    }
+
+    public async Task<List<Admin>> GetAllAsync()
+    {
+        return await _dbContext.Admins.ToListAsync();
+    }
 }
