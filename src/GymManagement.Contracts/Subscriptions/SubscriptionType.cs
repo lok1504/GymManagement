@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace GymManagement.Contracts.Subscriptions;
 
@@ -6,6 +6,6 @@ namespace GymManagement.Contracts.Subscriptions;
 public enum SubscriptionType
 {
     Free,
-    Starter, 
+    Starter,
     Pro
 }
