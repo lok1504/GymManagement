@@ -2,7 +2,7 @@
 using MediatR;
 using GymManagement.Domain.Subscriptions;
 
-namespace GymManagement.Application.Subscriptions.Commands.CreateSubscriptionCommand;
+namespace GymManagement.Application.Subscriptions.Commands.CreateSubscription;
 
 public record CreateSubscriptionCommand(
     SubscriptionType SubscriptionType, 
