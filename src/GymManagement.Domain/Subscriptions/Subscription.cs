@@ -2,6 +2,22 @@
 
 public class Subscription
 {
-    public Guid Id { get; set; }
-    public string SubscriptionType { get; set; } = string.Empty;
+    private readonly Guid _adminId;
+    public Guid Id { get; private set; }
+    public SubscriptionType SubscriptionType { get; private set; } = null!;
+
+    public Subscription(
+        SubscriptionType subscriptionType, 
+        Guid adminId, 
+        Guid? id = null)
+    {
+        SubscriptionType = subscriptionType;
+        _adminId = adminId;
+        Id = id ?? Guid.NewGuid();
+    }
+
+    private Subscription()
+    {
+
+    }
 }
