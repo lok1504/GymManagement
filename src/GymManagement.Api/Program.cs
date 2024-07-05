@@ -7,6 +7,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddProblemDetails();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services
     .AddApplication()
@@ -15,6 +16,7 @@ builder.Services
 var app = builder.Build();
 
 app.UseExceptionHandler();
+app.AddInfrastructureMiddleware();
 
 if (app.Environment.IsDevelopment())
 {

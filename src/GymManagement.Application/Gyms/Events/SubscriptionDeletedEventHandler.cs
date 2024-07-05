@@ -22,6 +22,6 @@ public class SubscriptionDeletedEventHandler : INotificationHandler<Subscription
         var gyms = await _gymsRepository.ListBySubscriptionIdAsync(notification.SubscriptionId);
 
         await _gymsRepository.RemoveRangeAsync(gyms);
-        await _unitOfWork.CommitChangesAsync();
+         await _unitOfWork.CommitChangesAsync();
     }
 }
